@@ -45,10 +45,11 @@ RUN pip install --no-cache-dir \
     flask-limiter==3.5.1 \
     marshmallow==3.19.0
 
-# Extra drivers
+# Big query drivers
 RUN pip install --no-cache-dir \
-    'google-cloud-bigquery[bqstorage,pandas]' \
-    psycopg2-binary
+    sqlalchemy-bigquery>=1.4.0 \
+    google-cloud-bigquery>=3.18.0 \
+    google-auth>=2.27.0
 
 # Create superset user & home directory
 RUN adduser --disabled-password --gecos '' superset \

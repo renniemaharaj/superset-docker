@@ -12,6 +12,7 @@ services:
       - .env
     volumes:
       - superset_home:/app/superset_home
+      - ./gcp-key.json:/app/pythonpath/gcp-key.json:ro
     entrypoint: ["/app/entrypoint.sh","app"]
     depends_on:
       - db
