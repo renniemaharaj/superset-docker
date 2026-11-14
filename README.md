@@ -1,5 +1,7 @@
 # Superset Docker Deployment
 
+![Apache Superset](docs/images/superset-banner.png)
+
 This is a **custom Superset Docker deployment** for production environments.
 
 ## Overview
@@ -14,6 +16,8 @@ Key features:
 * **Flexible configuration**: Can be configured via `.env` or a custom `superset_cfx.py` file.
 
 This setup provides a lean, production-targeted Superset deployment.
+
+![Apache Superset World Bank data dashboard](docs/images/world-bank-dashboard.png)
 
 ## Deployment Structure
 
@@ -206,3 +210,7 @@ docker-compose -f docker-compose-extended.yml up -d --build
 ---
 
 This setup offers a **scalable, production-ready Superset deployment** with a clear separation of required vs optional layers for efficiency and flexibility.
+
+## License
+
+This deployment is licensed under the [MIT License](LICENSE). Apache Superset and its branding retain their respective licenses and trademarks.
